@@ -54,18 +54,27 @@ a {
 }
 
 /* =============== header ===============*/
-.header {
+
+.fixed-header {
+    padding-top: 26px;
+    background: #e6f0ff;
+    position: sticky;
+    top: -26px;
+    z-index: 1;
+}
+
+.hero-wrap {
     position: relative;
+    display: flex;
+    flex-direction: column;
     background-color: #e6f0ff;
-    height: 100vh;
+    height: calc(100vh - 91px);
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    /* su dung margin-top: 38px se bi hien tuong margin-collapse (the cha-the con) */
-    /* cach xu li */
-    padding-top: 38px;
+    padding: 12px 0;
 }
 
 .navbar ul {
